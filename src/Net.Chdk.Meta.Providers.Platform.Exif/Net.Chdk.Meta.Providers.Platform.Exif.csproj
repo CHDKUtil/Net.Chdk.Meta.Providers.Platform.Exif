@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <Description>CHIMP EXIF platform metadata base provider</Description>
+    <RootNamespace>Net.Chdk.Meta.Providers.Platform.Exif</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.5.0</Version>
+    <VersionSuffix>alpha</VersionSuffix>
+    <Product>CHIMP</Product>
+    <Authors>Dmitry Shechtman</Authors>
+    <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Net.Chdk.Meta.Providers.Platform.Exif</Title>
+    <PackageVersion>$(Version)-$(VersionSuffix)</PackageVersion>
+    <PackageLicenseExpression>GPL-2.0-or-later</PackageLicenseExpression>
+    <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Providers.Platform.Exif</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Providers.Platform.Exif</RepositoryUrl>
+    <PackageTags>chimp meta provider platform html</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Net.Chdk.Meta.Providers.Platform.Core" Version="0.4.1-alpha" />
+  </ItemGroup>
+
+</Project>
